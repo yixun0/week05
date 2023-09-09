@@ -1,0 +1,14 @@
+.nav{
+    min-width: 296px;
+}
+.nav-link{
+    position: relative;
+}
+
+nav .active::before{
+    content: '';
+    position: absolute;
+    border-left: 4px solid #198754 ;
+    height: 32px;
+    left: -32px;
+}
