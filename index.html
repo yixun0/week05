@@ -1,22 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-4cfea7bd.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons"
+    rel="stylesheet">
+    <title>Assignment</title>
+    <script type="module" crossorigin src="/week05/assets/index-d6636c50.js"></script>
+    <link rel="stylesheet" href="/week05/assets/index-24302039.css">
   </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/web-layout-training-vite/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
-
-    <footer class="footer">我是 footer</footer>
+  <body class="d-flex">
+    <nav class="nav d-flex flex-column py-7 ps-7 bg-light vh-100">
+        <h1 class="mb-7">
+            <a href="../pages/index.html">
+                <img src="/week05/assets/logo-ANSWER-5336fb45.svg" alt="logo-ANSWER">
+            </a>
+        </h1>
+        <a class="nav-link link-dark fw-bold d-flex align-items-center mb-6">
+            <span class="material-icons me-5">assessment</span>
+            Dashboard
+        </a>
+        <a class="nav-link link-dark fw-bold d-flex align-items-center mb-6" href="#">
+            <span class="material-icons me-5">forum</span>
+            Question
+        </a>
+        <a class="nav-link link-dark fw-bold d-flex align-items-center mb-6 text-success active" href="#">
+            <span class="material-icons me-5">assignment</span>
+            Assignment
+        </a>
+        <a class="nav-link link-dark fw-bold d-flex align-items-center mb-6" href="#">
+            <span class="material-icons me-5">video_library</span>
+            Course
+        </a>
+        <a class="nav-link link-dark fw-bold d-flex align-items-center mb-6" href="#">
+            <span class="material-icons me-5">group</span>
+            Admin
+        </a>
+        <a class="nav-link link-dark fw-bold d-flex align-items-center" href="#">
+            <span class="material-icons me-5">settings</span>
+            Settings
+        </a>
+    <div class="d-flex align-items-center mt-auto">
+        <div class="profile">
+            <img src="/week05/assets/andychen-f14fef59.jpeg" alt="profile">
+        </div>
+        <div class="ms-5">
+            <p class="fw-bold">Andy Chen</p>
+            <p class="mt-1 text-secondary fs-7">andy0401@gmail.com</p>
+        </div>
+    </div>
+  </nav>
+      <main class="container-fluid px-7">
+        <div class="d-flex justify-content-between align-items-center py-7">
+    <div class="d-flex align-items-center">
+      <h2 class="fs-4 lh-33 fw-bold me-8">Assignment</h2>
+      <div class="dropdown">
+        <a class="d-flex align-items-center text-dark fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          All Courses
+          <span class="material-icons-outlined text-success ms-3">expand_more</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex">
+      <span class="material-icons-outlined me-6">search</span>
+      <span class="material-icons">notifications_active</span>
+    </div>
+  </div>        <div class="d-flex justify-content-between mt-4 mb-2">
+          <div class="dropdown">
+            <a class="d-flex align-items-center text-dark fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              All (4)
+              <span class="material-icons-outlined text-success ms-3">expand_more</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <p class="text-secondary fs-8 lh-24">2 comments</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active p-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="fs-8 lh-24">Chapter Assignment 2</p>
+                  <p class="fs-8 lh-24">4 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-end">
+                  <h3 class="fs-6 fw-bold lh-24">Please check this file…</h3>
+                  <p class="fs-8 text-secondary lh-24">Emily Wang</p>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="fs-8 lh-24">Chapter Assignment 1</p>
+                  <p class="fs-8 lh-24">12 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-end">
+                  <h3 class="fs-6 fw-bold lh-24">My Homework</h3>
+                  <p class="fs-8 text-secondary lh-24">David Xu</p>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="fs-8 lh-24">Final Assignment</p>
+                  <p class="fs-8 lh-24">18 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-end">
+                  <h3 class="fs-6 fw-bold lh-24">Have a problem with this…</h3>
+                  <p class="fs-8 text-secondary lh-24">Tony Wei</p>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="fs-8 lh-24">Final Assignment</p>
+                  <p class="fs-8 lh-24">19 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-end">
+                  <h3 class="fs-6 fw-bold lh-24">Did I do it right?</h3>
+                  <p class="fs-8 text-secondary lh-24">Christina Lin</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center px-5 py-4 ">
+                <div>
+                  <p class="fs-8 lh-24 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-icons">more_vert</span>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center ps-5 mt-5">
+                  <div class="profile">
+                      <img src="/week05/assets/emilywang-cc5a821b.jpeg" alt="profile">
+                  </div>
+                  <div class="ms-3">
+                      <p class="fw-bold mb-1">Emily Wang</p>
+                      <p class="fs-8 lh-24 text-secondary">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+                <div class="ms-9 me-7 border-bottom">
+                  <p class="my-5 fs-7 lh-21">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                    <code class="bg-light font-mono">div</code> is bigger than the height of the <code class="bg-light font-mono">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-light border rounded-6 d-inline-flex mb-5 lh-24 fw-bold py-3 ps-4 pe-5" download="HW-2-David.zip">
+                    <span class="material-icons me-3">attach_file</span>
+                    HW-2-David.zip</a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mt-5">
+                  <div class="d-flex align-items-center ps-5">
+                    <div class="profile">
+                        <img src="/week05/assets/andychen-f14fef59.jpeg" alt="profile">
+                    </div>
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Andy Chen (You)</p>
+                        <p class="fs-8 lh-24 text-secondary">13:24 AM (1 hours ago)</p>
+                    </div>
+                  </div>
+                  <div class="me-7">
+                    <span class="material-icons-outlined me-6">star_border</span>
+                    <span class="material-icons">edit</span>
+                  </div>
+                </div>
+                <div class="ms-9 me-7 my-5">
+                  <p class="fs-7 lh-21">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                  <p class="my-7">You can:</p>
+                  <ul>
+                    <li>adjust the <code class="bg-light font-mono">vertical-align</code>of the image to position it elsewhere (e.g. the <code class="bg-light font-mono">middle</code>) or</li>
+                    <li>change the <code class="bg-light font-mono">display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-5">
+              <div>
+                <span class="material-icons">chevron_left</span>
+                <span class="material-icons ms-6">chevron_right</span>
+              </div>
+              <div>
+                <a class="btn btn-outline-primary px-7 py-3 me-5 rounded-6" href="">Mark as read</a>
+                <a class="btn btn-primary px-7 py-3 rounded-6" href="">Reply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
